@@ -1,0 +1,42 @@
+package HashMap;
+import java.util.*;
+class studentGrade{
+	HashMap<String,Integer> student = new HashMap<>();
+	void addCustomer(String str) {
+	}
+	
+	void serveCustomer() {
+		
+	}
+	void viewQueue() {
+		
+}
+public class Hash {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		studentGrade grade = new studentGrade();
+		int n;
+		do {
+			System.out.println("1.Add/update student Grade\n2.Retrive Dtudent grade\n3.View Queue\n4.Exit");
+			System.out.println("Enter your choice: ");
+			n = sc.nextInt();
+			switch (n) {
+			case 1: 
+				System.out.println("Enter the customer name: ");
+				String a = sc.next();
+				grade.addCustomer(a);
+				break;
+			case 2:
+				grade.serveCustomer();
+				break;
+			case 3:
+				System.out.println("The playlist Contains");
+				grade.viewQueue();
+				break;
+			case 4:
+				System.out.println("Exiting");
+			}
+		}while(n!=4);				
+}
+}
+

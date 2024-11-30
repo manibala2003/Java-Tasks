@@ -1,0 +1,22 @@
+package exception;
+class DivisionExample{
+	void Dividenumber(int num,int den) {
+		int res = 0;
+		try {
+			res = num/den;
+		}catch (ArithmeticException e) {
+			System.out.println("Cant divide by zero");
+		}catch (Exception e) {
+			System.out.println("Some error");
+		}
+	}
+}
+
+public class exception {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

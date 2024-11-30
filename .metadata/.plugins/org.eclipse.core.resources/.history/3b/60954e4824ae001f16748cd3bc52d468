@@ -1,0 +1,26 @@
+package ArrayList;
+import java.util.*;
+class Array{
+	void add(String str) {
+		
+	}
+	void remove(int k) {
+		
+	}
+	void display() {
+		
+	}
+	void nameCheck(String str) {
+		
+	}
+}
+public class list {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		ArrayList<String> ar = new ArrayList<>();
+		
+		
+	}
+
+}

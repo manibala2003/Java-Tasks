@@ -1,0 +1,23 @@
+package file;
+import java.io.*;
+import java.util.*;
+
+public class filehandling {
+	public static void main(String args[]) {
+		String str ="";
+		try {
+			File f = new File("ex.txt");
+			Scanner sc = new Scanner(f);
+			while (sc.hasNextLine()) {
+				
+				str = sc.nextLine();
+				
+			}
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		System.out.println(str);
+		
+	}
+
+}

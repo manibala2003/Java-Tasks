@@ -1,0 +1,42 @@
+package ArrayList;
+import java.util.*;
+class Array{
+	ArrayList<String> studentList = new ArrayList<>();
+	void addName(String str) {
+		studentList.add(str);
+	}
+	void remove(int k) {
+		
+	}
+	void display() {
+		
+	}
+	void nameCheck(String str) {
+		
+	}
+}
+public class list {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Array ar = new Array();
+		int n;
+		do {
+			System.out.println("1.Insert\n2.Delete\n3.Display\n4.Check\n");
+			System.out.println("Enter your choice: ");
+			n = sc.nextInt();
+			switch (n) {
+			case 1: {
+				System.out.println("Enter the name: ");
+				String a = sc.nextLine();
+				ar.addName(a);
+				break;
+			}
+		}while(n<=3);
+		
+		
+		
+		
+	}
+
+}

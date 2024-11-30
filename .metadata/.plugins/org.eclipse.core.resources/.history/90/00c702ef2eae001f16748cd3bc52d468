@@ -1,0 +1,10 @@
+package Queue;
+
+public class fifo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

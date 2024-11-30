@@ -1,0 +1,37 @@
+package exception;
+
+import java.util.Scanner;
+import java.
+
+class DivisionExample{
+	void Dividenumber(int num,int den) {
+		int res = 0;
+		try {
+			res = num/den;
+			System.out.print(res);
+		}catch (Exception e) {
+			System.out.println("Some error "+e);
+		}finally {
+			System.out.print("Excepted");
+		}
+	}
+}
+
+public class exception {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		DivisionExample d = new DivisionExample();
+		try {
+		int num = sc.nextInt();
+		int den = sc.nextInt();
+		d.Dividenumber(num,den);
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+		sc.close();
+		
+
+	}
+
+}

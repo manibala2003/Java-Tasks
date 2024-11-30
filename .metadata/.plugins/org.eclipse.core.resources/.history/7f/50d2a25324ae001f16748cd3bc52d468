@@ -1,0 +1,39 @@
+package ArrayList;
+import java.util.*;
+class Array{
+	ArrayList<String> list = new ArrayList<>();
+	void add(String str) {
+		list.add(str);
+	}
+	void remove(int k) {
+		
+	}
+	void display() {
+		
+	}
+	void nameCheck(String str) {
+		
+	}
+}
+public class list {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Array ar = new Array();
+		do {
+			int n = sc.nextInt();
+			switch (n) {
+			case 1: {
+				ar.add(null);
+			}
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + n);
+			}
+		}while(false);
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,54 @@
+package HashMap;
+import java.util.*;
+class studentGrade{
+	HashMap<String,Integer> student = new HashMap<>();
+	void addorUpdateStudent(String str,int n) {
+		if(student.containsKey(str)) {
+		student.put(str, n);
+		System.out.println("Student updated successfully");
+		}else {
+			student.put(str, n);
+			System.out.println("Student added successfully");
+		}
+	}
+	void serveCustomer() {
+		
+	}
+	void viewQueue() {
+		
+}
+}
+public class Hash {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		studentGrade grade = new studentGrade();
+		int n;
+		do {
+			System.out.println("1.Add/update student Grade\n2.Retrive Dtudent grade\n3.Display all students and Grade\n4.Sort students\n5.Exit");
+			System.out.println("Enter your choice: ");
+			n = sc.nextInt();
+			switch (n) {
+			case 1: 
+				System.out.println("Enter the Student name: ");
+				String name = sc.next();
+				System.out.println("Enter Student Grade: ");
+				int mark = sc.nextInt();
+				grade.addorUpdateStudent(name,mark);
+				break;
+			case 2:
+				grade.serveCustomer();
+				break;
+			case 3:
+				System.out.println("The playlist Contains");
+				grade.viewQueue();
+				break;
+			case 4:
+				System.out.println("Exiting");
+				break;
+			}
+		}while(n!=4);				
+}
+}
+
+
+

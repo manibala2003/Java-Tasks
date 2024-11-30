@@ -1,0 +1,58 @@
+package Queue;
+import java.util.*;
+class Array{
+	Queue<String> customer = new LinkedList<>();
+	void addCustomer(String str) {
+		customer.add(str);
+	}
+	void remove(String k) {
+		if(customer.contains(k)) {
+			customer.remove(k);
+		}else {
+			System.out.println("There is no such song");
+		}
+	}
+	void display() {
+		for(String i:customer) {
+			System.out.println(i);
+		}
+	}
+	void peek() {
+		System.out.println(customer.peek());
+	}
+}
+public class fifo {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Array ar = new Array();
+		int n;
+		do {
+			System.out.println("1.Insert song\n2.Remove song\n3.Display\n4.Play first song\n5.Exit");
+			System.out.println("Enter your choice: ");
+			n = sc.nextInt();
+			switch (n) {
+			case 1: 
+				System.out.println("Enter the song name: ");
+				String a = sc.next();
+				ar.addCustomer(a);
+				break;
+			case 2:
+				System.out.println("Enter the song name to remove: ");
+				String rem = sc.next();
+				ar.remove(rem);
+				break;
+			case 3:
+				System.out.println("The playlist Contains");
+				ar.display();
+				break;
+			case 4:
+				System.out.println("The First song is :");
+				ar.peek();
+				break;
+			case 5:
+				return;
+			}
+		}while(n!=5);				
+}
+}
+

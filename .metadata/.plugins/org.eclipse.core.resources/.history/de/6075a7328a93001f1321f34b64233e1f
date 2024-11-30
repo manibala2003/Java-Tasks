@@ -1,0 +1,32 @@
+package exception;
+
+import java.util.Scanner;
+
+class DivisionExample{
+	void Dividenumber(int num,int den) {
+		int res = 0;
+		try {
+			res = num/den;
+			System.out.print(res);
+		}catch (ArithmeticException e) {
+			System.out.println("Cant divide by zero");
+		}catch (Exception e) {
+			System.out.println("Some error"+e);
+		}
+	}
+}
+
+public class exception {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		DivisionExample d = new DivisionExample();
+		int num = sc.nextInt();
+		int den = sc.nextInt();
+		d.Dividenumber(num,den);
+		sc.close();
+		
+
+	}
+
+}
